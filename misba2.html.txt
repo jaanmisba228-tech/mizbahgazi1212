@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misba Gazi | IT Portfolio</title>
+<style>
+/* Modern CSS with Animations */
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+color: #333;
+line-height: 1.6;
+}
+
+header {
+background: #2c3e50;
+color: white;
+padding: 60px 20px;
+text-align: center;
+clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.container {
+max-width: 1000px;
+margin: -50px auto 50px;
+background: white;
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Photo Animation */
+.profile-img {
+width: 280px;
+border-radius: 20px;
+transition: transform 0.3s ease;
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profile-img:hover {
+transform: scale(1.05); /* Mouse le jane par thoda bada hoga */
+}
+
+.profile-section {
+display: flex;
+align-items: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+
+h2 { color: #34495e; border-left: 5px solid #3498db; padding-left: 15px; margin-top: 30px; }
+
+/* Skills Styling */
+.skills-list {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+list-style: none;
+padding: 0;
+}
+
+.skills-list li {
+background: #3498db;
+color: white;
+padding: 10px 20px;
+border-radius: 50px;
+font-size: 14px;
+transition: background 0.3s;
+}
+
+.skills-list li:hover {
+background: #2980b9;
+}
+
+/* Contact Form Styling */
+.contact-form {
+display: grid;
+gap: 15px;
+margin-top: 20px;
+}
+
+input, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ddd;
+border-radius: 8px;
+font-size: 16px;
+}
+
+button {
+background: #27ae60;
+color: white;
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 18px;
+transition: 0.3s;
+}
+
+button:hover {
+background: #2ecc71;
+transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+.profile-section { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Misba Gazi</h1>
+<p>IT Engineering Student | Bridging Arts & Technology</p>
+</header>
+
+<div class="container">
+<div class="profile-section">
+<img src="misba_photo.jpg" alt="Misba Gazi" class="profile-img">
+
+<div class="bio-text">
+<h2>About My Journey</h2>
+<p>Hello! I am currently in my <b>4th Semester of IT Engineering</b>. Having a background in <b>Humanities (Arts)</b> from 10th and 12th, I bring a unique blend of creativity and logical thinking to the tech world.</p>
+<p>I believe that my diverse background helps me understand user needs better, making me a more empathetic developer.</p>
+</div>
+</div>
+
+<h2>My Skills</h2>
+<ul class="skills-list">
+<li>HTML5 / CSS3</li>
+<li>IT Operations</li>
+<li>Creative Problem Solving</li>
+<li>Humanities Perspective</li>
+<li>Technical Writing</li>
+</ul>
+
+<h2>Get In Touch</h2>
+<form class="contact-form">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="How can I help you?"></textarea>
+<button type="button" onclick="alert('Message Sent Successfully!')">Send Message</button>
+</form>
+</div>
+
+<footer style="text-align: center; color: #7f8c8d; padding-bottom: 30px;">
+© 2026 Misba Gazi | Built with ❤️ and Code
+</footer>
+
+</body>
+</html>
